@@ -2,8 +2,9 @@
 // Solo se toca la tarjeta de acceso: el resto del frontend (portal) hereda
 // las variables y no necesita más.
 
-body:has(.oe_login_form) {
-    background-color: #F5F6F3;
+// El <body> del acceso lleva .bg-100 de Bootstrap, que es !important.
+body.bg-100:has(.oe_login_form) {
+    background-color: #F5F6F3 !important;
 }
 
 .o_database_list {
