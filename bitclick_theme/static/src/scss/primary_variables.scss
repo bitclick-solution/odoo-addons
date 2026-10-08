@@ -1,0 +1,70 @@
+// Bitclick: sistema de diseño 2026 sobre las variables de Odoo 19.
+//
+// Fuente de los valores: web/src/index.css del repo bitclick-solution/server,
+// tema claro (el backend de Odoo es claro). Verde = automático y estado;
+// amarillo = persona y acción. El amarillo es solo relleno, nunca texto.
+//
+// Este fichero se antepone a primary_variables.scss de Odoo: allí todo es
+// !default, así que lo que se define aquí gana. Por eso no se puede usar
+// ninguna variable de Odoo, solo sus funciones (o-to-rem, o-add-unicode-...).
+
+// == Grises con sesgo verde (tokens del tema claro)
+$o-gray-100: #F5F6F3;  // --surface
+$o-gray-200: #EDF0EB;  // --surface-2
+$o-gray-300: #DFE3DD;  // --line
+$o-gray-400: #C2C9C2;  // --line-strong
+$o-gray-500: #959C96;
+$o-gray-600: #5A615C;  // --faint   6,37:1 sobre blanco
+$o-gray-700: #3E4540;  // --muted   9,86:1
+$o-gray-800: #232724;
+$o-gray-900: #080A09;  // --ink    19,85:1
+
+// == Marca
+// Verde oscuro del tema claro (#00FF66 no se lee sobre blanco): enlaces,
+// estados activos, foco y éxito. 5,86:1 sobre blanco.
+$o-community-color: #00752F;
+$o-brand-primary: #00752F;
+$o-action: #00752F;
+$o-success: #00752F;
+
+$o-main-text-color: #080A09;
+$o-main-headings-color: #080A09;
+$o-main-link-color: #00752F;
+
+// == Tipografía (autoalojada, ver fonts.scss)
+$o-font-family-sans-serif: o-add-unicode-support-font(("Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif));
+$o-headings-font-family: o-add-unicode-support-font(("Space Grotesk", "Inter", -apple-system, "Segoe UI", Arial, sans-serif));
+$o-font-family-monospace: o-add-unicode-support-font(("JetBrains Mono", SFMono-Regular, Menlo, Consolas, monospace));
+
+// == Forma: lo que contiene es tarjeta de 14 px (los botones van en
+// píldora, en backend.scss).
+$o-border-radius-lg: o-to-rem(14px);
+
+// == Botón principal: amarillo con texto negro, como el CTA de la web.
+// En Odoo es Guardar, Confirmar, Validar: la persona decide.
+// Negro sobre #FFDE00: 15,7:1.
+$o-btns-bs-override: (
+    "primary": (
+        background: #FFDE00,
+        border: #FFDE00,
+        color: #000000,
+
+        hover-background: #FFE733,
+        hover-border: #FFE733,
+        hover-color: #000000,
+
+        active-background: #FFE733,
+        active-border: #080A09,
+        active-color: #000000,
+    ),
+);
+
+// == Barra superior: la sala de control (oscura, como el pie de la web).
+$o-navbar-background: #0A0B0A;
+$o-navbar-border-bottom: 1px solid #232724;
+$o-navbar-entry-color: rgba(#F2F5F0, .85);
+$o-navbar-entry-color--hover: #F2F5F0;
+$o-navbar-entry-bg--hover: rgba(#F2F5F0, .06);
+$o-navbar-badge-bg: #00FF66;
+$o-navbar-badge-color: #000000;
+$o-navbar-badge-text-shadow: none;

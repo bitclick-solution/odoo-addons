@@ -1,0 +1,47 @@
+// Pantalla de acceso (/web/login, /web/reset_password, /web/signup).
+// Solo se toca la tarjeta de acceso: el resto del frontend (portal) hereda
+// las variables y no necesita más.
+
+body:has(.oe_login_form) {
+    background-color: #F5F6F3;
+}
+
+.o_database_list {
+    font-family: "Inter", -apple-system, "Segoe UI", Arial, sans-serif;
+    background-color: #FFFFFF !important;
+    border: 1px solid #DFE3DD !important;
+    border-radius: 14px;
+
+    .form-control {
+        border-color: #C2C9C2;
+        border-radius: 10px;
+
+        &:focus {
+            border-color: #00752F;
+            box-shadow: 0 0 0 1px #00752F;
+        }
+    }
+
+    .btn-primary {
+        background-color: #FFDE00;
+        border-color: #FFDE00;
+        color: #000000;
+        border-radius: 9999px;
+        font-weight: 500;
+
+        &:hover,
+        &:focus {
+            background-color: #FFE733;
+            border-color: #FFE733;
+            color: #000000;
+        }
+    }
+
+    .btn {
+        border-radius: 9999px;
+    }
+
+    a {
+        color: #00752F;
+    }
+}

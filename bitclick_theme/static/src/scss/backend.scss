@@ -1,0 +1,50 @@
+// Reglas que las variables no alcanzan. Pocas a propósito: cada regla aquí
+// hay que revisarla al pasar a otra versión de Odoo.
+
+// Lo que se pulsa es píldora. Los grupos de botones conservan sus uniones
+// porque Bootstrap las anula con más especificidad.
+// Fuera: las tarjetas «Añadir» de los kanban, que son .btn pero ocupan un
+// bloque entero y en píldora quedan deformes.
+.o_web_client .btn:not(.o-kanban-button-new) {
+    border-radius: 9999px;
+}
+
+// Un solo botón principal por pantalla. El chatter («Enviar mensaje») no
+// es la acción de la ficha: pasa a secundario para no competir con ella.
+.o-mail-Chatter-topbar .o-mail-Chatter-sendMessage.btn-primary {
+    background-color: #DFE3DD;
+    border-color: #DFE3DD;
+    color: #080A09;
+
+    &:hover {
+        background-color: #C2C9C2;
+        border-color: #C2C9C2;
+    }
+}
+
+// Titulares en Space Grotesk con el tracking cerrado de la web.
+.o_web_client {
+    h1, h2, h3, .h1, .h2, .h3 {
+        letter-spacing: -0.02em;
+    }
+}
+
+// Nombre de la app en la barra: Space Grotesk 600.
+.o_main_navbar .o_menu_brand {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+// Diálogos y desplegables: tarjeta de 14 px con hilo, sin sombra pesada.
+.o_web_client {
+    .modal-content {
+        border-radius: 14px;
+        border: 1px solid #DFE3DD;
+    }
+
+    .dropdown-menu {
+        border-radius: 14px;
+        border-color: #DFE3DD;
+    }
+}

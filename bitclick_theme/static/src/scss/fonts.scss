@@ -1,0 +1,34 @@
+// Fuentes autoalojadas, las mismas de bitclick.solutions. Nada se pide a
+// terceros. Variables, subconjunto latin + latin-ext.
+
+@font-face {
+    font-family: "Inter";
+    src: url("/bitclick_theme/static/src/fonts/Inter.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/bitclick_theme/static/src/fonts/Inter-Italic.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("/bitclick_theme/static/src/fonts/SpaceGrotesk.woff2") format("woff2");
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/bitclick_theme/static/src/fonts/JetBrainsMono.woff2") format("woff2");
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+}
