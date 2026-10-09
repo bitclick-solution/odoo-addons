@@ -18,6 +18,8 @@ Qué cambia
 * **Forma.** Botones en píldora; diálogos y desplegables con 14 px de radio.
 * **Un principal por pantalla.** «Enviar mensaje» del chatter pasa a secundario.
 * **Acceso** (``/web/login``): tarjeta blanca con hilo, botón amarillo.
+* **Menú de apps** de ``web_responsive`` (OCA), si está instalado: fondo
+  oscuro con la luz verde de la web y nombres en claro.
 
 Qué no cambia
 =============

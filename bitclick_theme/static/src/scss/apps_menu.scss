@@ -1,0 +1,26 @@
+// Menú de apps a pantalla completa de web_responsive (OCA), con la sala de
+// control de la marca: negro con sesgo verde y la luz verde difusa del héroe
+// de bitclick.solutions. Sin web_responsive estas reglas no encuentran nada.
+//
+// La clase repetida sube la especificidad por encima de la de web_responsive,
+// que puede cargarse después que este módulo.
+
+:root .o_grid_apps_menu.o_grid_apps_menu[data-theme] {
+    --app-menu-background:
+        radial-gradient(ellipse 60% 55% at 50% 0%, rgba(0, 255, 102, .12), transparent 70%),
+        #0A0B0A;
+    --app-menu-text-color: #F2F5F0;
+    --app-menu-text-shadow: none;
+    --app-menu-hover-background: rgba(242, 245, 240, .06);
+    --apps-menu-scrollbar-background: #363B37;
+    --apps-menu-empty-search-color: #AEB5AF;
+}
+
+.o_grid_apps_menu .o-app-menu-item {
+    border-radius: 14px;
+
+    &__icon {
+        border-radius: 14px;
+        box-shadow: inset 0 0 0 1px #232724;
+    }
+}

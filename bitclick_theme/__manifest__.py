@@ -3,7 +3,7 @@
 {
     "name": "Bitclick: tema de marca",
     "summary": "Colores, tipografía y forma del sistema de diseño 2026 de Bitclick en el backend y el login",
-    "version": "19.0.1.0.1",
+    "version": "19.0.1.1.0",
     "category": "Hidden/Tools",
     "author": "Bitclick Solutions S.L.U.",
     "website": "https://bitclick.solutions",
@@ -17,6 +17,7 @@
         "web.assets_backend": [
             "bitclick_theme/static/src/scss/fonts.scss",
             "bitclick_theme/static/src/scss/backend.scss",
+            "bitclick_theme/static/src/scss/apps_menu.scss",
         ],
         "web.assets_frontend": [
             "bitclick_theme/static/src/scss/fonts.scss",
